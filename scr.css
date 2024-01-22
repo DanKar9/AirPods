@@ -1,0 +1,453 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color:#000;
+    font-size: 16px;
+    
+}
+
+h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Header */
+
+.header{
+    min-height: 100vh;
+    position: relative;
+  
+}
+
+
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+.header_top{
+    padding: 40px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav{
+    align-items: center;
+}
+
+.nav_link{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+.nav_btn{
+   
+margin-left:40px ;
+padding: 15px 58px;
+color: #fff;
+background-color: #000;
+border-radius: 30px;
+cursor: pointer;
+text-transform: uppercase;
+
+}
+
+.header_title{
+    position: absolute;
+    font-size: 110px;
+    padding-top: 100px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.title--pod{
+    position: relative;
+    z-index: -1;
+}
+
+.title--s{
+    display: inline-block;
+    transform: translateY(60px);
+}
+
+.title--m{
+    display: inline-block;
+    transform: translate(-90px,290px);
+    
+}
+
+.title--ax{
+    display: inline-block;
+transform: translate(-170px,420px);
+    position: relative;
+    z-index: -1;
+}
+
+.header_img{
+    text-align: center;
+}
+
+.header_img img{
+  
+    
+    max-width: 100%;
+}
+
+.content-item{
+    display: none;
+}
+
+.content-item__active{
+    display: inline-block;
+}
+
+.header_img::before{
+    background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+
+
+
+
+/*choose*/
+
+
+.choose{
+    padding: 45px 0 180px;
+    text-align: center;
+}
+
+.choose_title{
+    font-size: 36px;
+    font-weight: 700;
+    max-width: 555px;
+    margin: 0 auto 20px;
+}
+
+.choose_text{
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 555px;
+    margin: 0 auto 80px;
+}
+
+.choose_airpods{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+flex-wrap: wrap;
+
+}
+
+.chooseColorBtn{
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid var(--Grey, #777);
+    padding: 50px 55px;
+cursor: pointer;
+}
+
+
+.choose__color-btn--active{
+    display: none ;
+}
+
+
+
+/*composition*/
+
+.composition{
+    margin-bottom: 180px;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.title_text{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.composition_content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.composition_left{
+    max-width: 230px;
+}
+
+.composition_left p {
+    margin-bottom: 80px;
+    line-height: 120%
+}
+.composition_right img{
+    max-width: 100%;
+}
+
+
+/* battery */
+
+.battery{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: var(--Milk, #FAFAFA);
+
+}
+
+.battery_text{
+    max-width: 825px;
+    margin: 0 auto 40px;
+}
+
+.battery_img{
+    text-align: center;
+}
+.battery_img img{
+    max-width: 100%;
+}
+
+
+
+/*alive*/
+
+.alive{
+    padding: 80px 0 100px;
+    background: var(--Milk, #FAFAFA);
+}
+
+.alive_num{
+    text-align: center;
+    font-size: 210px;
+    font-weight: 700;
+}
+
+.alive_text{
+    max-width: 403px;
+}
+
+
+/*background*/
+
+.background{
+    
+    background-color: #000;
+    background-image: url(/images/background.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    
+  
+}
+
+.background::after{
+    content: "";
+    background-image: url(/images/audio_volni.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-position: bottom center;
+    width: 100%;
+    height: 150vh;
+    bottom: -250px;
+    left: 0;
+    right: 0;
+}
+
+
+.background_inner{
+    min-height: 200vh;
+    text-align: center;
+    color: #fff;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.background_box{
+    padding-bottom: 30vh;
+}
+
+.background_text{
+    margin-bottom: 10px;
+}
+
+
+.background_btn{
+   text-transform: uppercase;
+   font-weight: 700;
+   color: #000;
+   background-color: #fff;
+   padding: 15px 55px;
+   border-radius: 30px;
+   margin-top: 20px;
+   cursor: pointer;
+}
+
+
+/*footer*/
+.footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    
+    padding: 250px 0 40px;
+}
+
+.footer_title{
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.footer_num{
+    font-weight: 700;
+    margin-bottom: 20px; 
+}
+
+.footer_nav{
+    padding: 80px 0 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.footer_link{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+/* media */
+
+@media (max-width:1580px) {
+    .header{
+        min-height: 50vh;
+    }
+    .header_title {
+        
+        font-size: 80px;
+        transform: translateX(250px);
+    }
+}
+
+
+@media (max-width:1200px) {
+    .header_title {
+        transform: translateX(250px);
+        font-size: 60px;
+    }
+
+    .header_title{
+       
+      left: 0;
+      right: 0;
+      text-align: center;
+       padding-top: 20vh;
+        transform: none;
+        
+     }
+ 
+     .title--s{
+         transform: none;
+     }
+ 
+     .title--m{
+         transform: none;
+     }
+ 
+     .title--ax{
+         transform: none;
+     }
+}
+
+@media (max-width:1100px){
+
+    .header{
+        min-height: 50vh;
+    }
+
+  
+    .choose{
+        padding-bottom: 50px;
+    }
+    .title {
+        font-size: 32px;
+    }
+
+    .composition {
+        margin-bottom: 50px;
+    }
+
+    .alive {
+        padding: 40px 0 60px;
+        
+    }
+
+    .alive_num {
+       
+        font-size: 130px;
+}
+}
+
+
+@media (max-width:874px){
+    .header_title {
+        padding-top: 1vh;
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width:600px){
+    .header_title {
+        padding-top: 1vh;
+        font-size: 20px;
+    }
+}
